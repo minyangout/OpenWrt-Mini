@@ -3,7 +3,7 @@
 
 
 # 1-设置默认主题
-sed -i 's/bootstrap/opentomcat/g' ./feeds/luci/collections/luci/Makefile
+sed -i 's/bootstrap/argon/g' ./feeds/luci/collections/luci/Makefile
 
 # 2-设置管理地址
 sed -i 's/192.168.1.1/192.168.2.99/g' package/base-files/files/bin/config_generate
@@ -33,10 +33,10 @@ sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' packag
 #git clone --depth=1 https://github.com/ilxp/luci-app-ikoolproxy package/luci-app-ikoolproxy
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 #git clone --depth=1 https://github.com/destan19/OpenAppFilter package/OpenAppFilter
-git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
+#git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
 #git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-filebrowser luci-app-ssr-mudb-server
-git_sparse_clone openwrt-18.06 https://github.com/immortalwrt/luci applications/luci-app-eqos
-git_sparse_clone master https://github.com/syb999/openwrt-19.07.1 package/network/services/msd_lite
+#git_sparse_clone openwrt-18.06 https://github.com/immortalwrt/luci applications/luci-app-eqos
+#git_sparse_clone master https://github.com/syb999/openwrt-19.07.1 package/network/services/msd_lite
 
 # Themes
 git clone --depth=1 -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
