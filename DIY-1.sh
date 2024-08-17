@@ -85,6 +85,7 @@ git_sparse_clone main https://github.com/haiibo/packages luci-theme-atmaterial l
 # 更改 Argon 主题背景
 cp -f $GITHUB_WORKSPACE/images/bg1.jpg package/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 
+#预置Clash内核
 echo -e "预置Clash内核"
 mkdir -p package/luci-app-openclash/root/etc/openclash/core
 core_path="package/luci-app-openclash/root/etc/openclash/core"
