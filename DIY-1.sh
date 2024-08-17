@@ -152,9 +152,9 @@ wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Parted.Mak
 #git clone --depth=1 https://github.com/ximiTech/msd_lite package/msd_lite
 
 # homeproxy
-git clone --single-branch --depth 1 -b dev https://github.com/immortalwrt/homeproxy.git package/new/homeproxy
-rm -rf ./feeds/packages/net/sing-box
-cp -rf ../immortalwrt_pkg/net/sing-box ./feeds/packages/net/sing-box
+#git clone --single-branch --depth 1 -b dev https://github.com/immortalwrt/homeproxy.git package/new/homeproxy
+#rm -rf ./feeds/packages/net/sing-box
+#cp -rf ../immortalwrt_pkg/net/sing-box ./feeds/packages/net/sing-box
 
 # Istore
 echo >> feeds.conf.default
