@@ -185,11 +185,13 @@ echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >
 ./scripts/feeds install -a -p nas_luci
 
 # socat
-cp -rf ../Lienol_pkg/luci-app-socat ./package/new/luci-app-socat
-pushd package/new
-wget -qO - https://github.com/Lienol/openwrt-package/pull/39.patch | patch -p1
-popd
-sed -i '/socat\.config/d' feeds/packages/net/socat/Makefile
+#cp -rf ../Lienol_pkg/luci-app-socat ./package/new/luci-app-socat
+#pushd package/new
+#wget -qO - https://github.com/Lienol/openwrt-package/pull/39.patch | patch -p1
+#popd
+#sed -i '/socat\.config/d' feeds/packages/net/socat/Makefile
+
+git clone https://github.com/chenmozhijin/luci-app-socat.git package/luci-app-socat
 
 # sirpdboy
 mkdir -p package/sirpdboy
