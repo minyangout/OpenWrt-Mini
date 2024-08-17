@@ -128,6 +128,9 @@ git clone --depth 1 https://github.com/kiddin9/luci-app-dnsfilter.git package/ne
 # Dnsproxy
 cp -rf ../OpenWrt-Add/luci-app-dnsproxy ./package/new/luci-app-dnsproxy
 
+# 定时重启
+git clone https://github.com/zxl78585/luci-app-autoreboot.git package/luci-app-autoreboot
+
 # Docker 容器
 rm -rf ./feeds/luci/applications/luci-app-dockerman
 cp -rf ../dockerman/applications/luci-app-dockerman ./feeds/luci/applications/luci-app-dockerman
