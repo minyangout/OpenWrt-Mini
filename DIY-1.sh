@@ -28,11 +28,11 @@ echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-pa
 #git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package/tree/main/luci-app-socat.git package/luci-app-socat
 #git clone https://github.com/sirpdboy/sirpdboy-package/tree/main/luci-app-fileassistant.git package/luci-app-fileassistant
 # 添加 diskman 插件
-sed -i '$a\src-git diskman https://github.com/lisaac/luci-app-diskman' ./feeds.conf.default
+#sed -i '$a\src-git diskman https://github.com/lisaac/luci-app-diskman' ./feeds.conf.default
 
 # 添加 dockerman 插件
 sed -i '$a\src-git dockerman https://github.com/lisaac/luci-app-dockerman' ./feeds.conf.default
-sed -i '$a\src-git luci-lib-docker https://github.com/lisaac/luci-lib-docker' ./feeds.conf.default
+#sed -i '$a\src-git luci-lib-docker https://github.com/lisaac/luci-lib-docker' ./feeds.conf.default
 
 echo "
 # 主题
