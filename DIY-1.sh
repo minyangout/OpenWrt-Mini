@@ -65,5 +65,5 @@ echo "
 # fileassistant
 #CONFIG_PACKAGE_luci-app-fileassistant
 
-" >> .config
+#" >> .config
 
