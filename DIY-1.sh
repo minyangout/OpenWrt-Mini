@@ -36,7 +36,7 @@ sed -i '$a\src-git luci-lib-docker https://github.com/lisaac/luci-lib-docker' ./
 
 echo "
 # 主题
-CONFIG_PACKAGE_luci-theme-design=y
+#CONFIG_PACKAGE_luci-theme-design=y
 
 # mosdns
 #CONFIG_PACKAGE_luci-app-mosdns=y
@@ -54,16 +54,16 @@ CONFIG_PACKAGE_luci-theme-design=y
 #CONFIG_PACKAGE_luci-app-linkease=y
 
 # autotimeset
-CONFIG_PACKAGE_luci-app-autotimeset=y
+#CONFIG_PACKAGE_luci-app-autotimeset=y
 
 # advanced
-CONFIG_PACKAGE_luci-app-advanced=y
+#CONFIG_PACKAGE_luci-app-advanced=y
 
 # socat
-CONFIG_PACKAGE_luci-app-socat=y
+#CONFIG_PACKAGE_luci-app-socat=y
 
 # fileassistant
-CONFIG_PACKAGE_luci-app-fileassistant
+#CONFIG_PACKAGE_luci-app-fileassistant
 
 " >> .config
 
