@@ -16,9 +16,9 @@ echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >
 echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
 
 # 6-添加额外插件
-git clone https://github.com/gngpp/luci-theme-design package/luci-theme-design.git package/luci-theme-design
+#git clone https://github.com/gngpp/luci-theme-design package/luci-theme-design.git package/luci-theme-design
 #git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
-git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata.git package/v2ray-geodat
+#git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata.git package/v2ray-geodat
 #git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-aliddns
 #git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-pushbot
 #git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-jellyfin luci-lib-taskd luci-lib-xterm taskd
