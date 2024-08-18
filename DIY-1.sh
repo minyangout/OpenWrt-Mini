@@ -21,12 +21,12 @@ git clone https://github.com/gngpp/luci-theme-design package/luci-theme-design.g
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata.git package/v2ray-geodat
 #git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-aliddns
 #git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-pushbot
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-jellyfin luci-lib-taskd luci-lib-xterm taskd
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-linkease linkease ffmpeg-remux
-git clone https://github.com/sirpdboy/sirpdboy-package/tree/main/luci-app-autotimeset.git package/luci-app-autotimeset
-git clone https://github.com/sirpdboy/sirpdboy-package/tree/main/luci-app-advanced.git package/luci-app-advanced
-git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package/tree/main/luci-app-socat.git package/luci-app-socat
-git clone https://github.com/sirpdboy/sirpdboy-package/tree/main/luci-app-fileassistant.git package/luci-app-fileassistant
+#git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-jellyfin luci-lib-taskd luci-lib-xterm taskd
+#git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-linkease linkease ffmpeg-remux
+#git clone https://github.com/sirpdboy/sirpdboy-package/tree/main/luci-app-autotimeset.git package/luci-app-autotimeset
+#git clone https://github.com/sirpdboy/sirpdboy-package/tree/main/luci-app-advanced.git package/luci-app-advanced
+#git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package/tree/main/luci-app-socat.git package/luci-app-socat
+#git clone https://github.com/sirpdboy/sirpdboy-package/tree/main/luci-app-fileassistant.git package/luci-app-fileassistant
 # 添加 diskman 插件
 sed -i '$a\src-git diskman https://github.com/lisaac/luci-app-diskman' ./feeds.conf.default
 
