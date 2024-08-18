@@ -13,3 +13,50 @@ sed -i '$a\src-git openclash https://github.com/vernesong/OpenClash' ./feeds.con
 # 5-添加 PassWall 插件
 echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> "feeds.conf.default"
 echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
+
+# 6-添加额外插件
+git clone -b js --single-branch https://github.com/gngpp/luci-theme-design package/luci-theme-design
+#git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+#git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-aliddns
+#git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-pushbot
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-jellyfin luci-lib-taskd luci-lib-xterm taskd
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-linkease linkease ffmpeg-remux
+git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-autotimeset
+git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-advanced
+git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-socat
+git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-fileassistant
+
+echo "
+# 主题
+CONFIG_PACKAGE_luci-theme-design=y
+
+# mosdns
+#CONFIG_PACKAGE_luci-app-mosdns=y
+
+# pushbot
+#CONFIG_PACKAGE_luci-app-pushbot=y
+
+# 阿里DDNS
+#CONFIG_PACKAGE_luci-app-aliddns=y
+
+# Jellyfin
+#CONFIG_PACKAGE_luci-app-jellyfin=y
+
+# 易有云
+#CONFIG_PACKAGE_luci-app-linkease=y
+
+# autotimeset
+CONFIG_PACKAGE_luci-app-autotimeset=y
+
+# advanced
+CONFIG_PACKAGE_luci-app-advanced=y
+
+# socat
+CONFIG_PACKAGE_luci-app-socat=y
+
+# fileassistant
+CONFIG_PACKAGE_luci-app-fileassistant
+
+" >> .config
+
