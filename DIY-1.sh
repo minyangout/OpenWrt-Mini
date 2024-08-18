@@ -29,7 +29,11 @@ git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-soca
 git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-fileassistant
 
 # 添加 diskman 插件
-sed -i '$a\src-git diskman https://github.com/vernesong/OpenClash' ./feeds.conf.default
+sed -i '$a\src-git diskman https://github.com/lisaac/luci-app-diskman' ./feeds.conf.default
+
+# 添加 dockerman 插件
+sed -i '$a\src-git dockerman https://github.com/lisaac/luci-app-dockerman' ./feeds.conf.default
+sed -i '$a\src-git luci-lib-docker https://github.com/lisaac/luci-lib-docker' ./feeds.conf.default
 
 echo "
 # 主题
