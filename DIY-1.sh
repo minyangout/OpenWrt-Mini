@@ -1,3 +1,4 @@
+
 # 1-添加 ShadowSocksR Plus+ 插件
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
@@ -26,6 +27,9 @@ git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-auto
 git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-advanced
 git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-socat
 git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-fileassistant
+
+# 添加 diskman 插件
+sed -i '$a\src-git diskman https://github.com/vernesong/OpenClash' ./feeds.conf.default
 
 echo "
 # 主题
