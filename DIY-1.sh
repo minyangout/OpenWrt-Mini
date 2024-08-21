@@ -15,6 +15,8 @@ sed -i '$a\src-git openclash https://github.com/vernesong/OpenClash' ./feeds.con
 echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main" >> "feeds.conf.default"
 echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
 
+
+
 # 6-添加额外插件
 #git clone https://github.com/gngpp/luci-theme-design package/luci-theme-design.git package/luci-theme-design
 #git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
